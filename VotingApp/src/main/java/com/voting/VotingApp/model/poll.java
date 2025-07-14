@@ -22,9 +22,9 @@ public class poll {
 	private String question;
 	
 	@ElementCollection
-	private List<String> option=new ArrayList<String>();
+	private List<String> option=new ArrayList<>();
 	
 	
-	@ElementCollection
-	private List<String> votes=new ArrayList<String>();
+//	@ElementCollection
+//	private List<String> votes=new ArrayList<String>();
 }
