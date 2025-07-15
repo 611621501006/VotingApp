@@ -21,10 +21,13 @@ public class poll {
 	private long id;
 	private String question;
 	
+	
+	@ElementCollection 
+	// The ElementCollection values are always stored in a separate table.
+	private List<String> Options=new ArrayList<String>();
+	
+	
 	@ElementCollection
-	private List<String> option=new ArrayList<>();
+	private List<String> votes=new ArrayList<String>();
 	
-	
-//	@ElementCollection
-//	private List<String> votes=new ArrayList<String>();
 }
