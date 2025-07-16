@@ -2,7 +2,6 @@ package com.voting.VotingApp.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,9 +22,9 @@ public class poll {
 	
 	
 	@ElementCollection
-	private List<String> Options = new ArrayList<>();
+	private List<OptionVotes> options = new ArrayList<>();
 	
-	@ElementCollection
-	private List<Long> votes = new ArrayList<>();
+//	@ElementCollection
+//	private List<Long> votes = new ArrayList<>();
 	
 }
